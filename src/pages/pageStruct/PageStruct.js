@@ -3,9 +3,11 @@ import { HashRouter, Route } from "react-router-dom";
 import ReactDOM from 'react-dom';
 
 
+import TopNavigationBar from "../../Components/navbar/TopNavigationBar";
+import Footer from "../footer/Footer";
+
 
 import "./pageStruct.css";
-import Footer from "./footer/Footer";
 
 
 
@@ -17,7 +19,7 @@ class PageStruct extends Component {
     
     return(
         <HashRouter>
-
+            <TopNavigationBar />
             <Footer />
         </HashRouter>
     );
